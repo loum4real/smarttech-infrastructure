@@ -1,0 +1,11 @@
+// Zone directe pour smarttech.sn
+zone "smarttech.sn" {
+    type master;
+    file "/etc/bind/db.smarttech.sn";
+};
+
+// Zone inverse pour 192.168.1.0/24
+zone "1.168.192.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.192.168.1";
+};

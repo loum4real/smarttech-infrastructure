@@ -1,0 +1,18 @@
+;
+; Zone inverse pour 192.168.1.0/24
+;
+$TTL    604800
+@       IN      SOA     ns1.smarttech.sn. admin.smarttech.sn. (
+                        2026021701      ; Serial
+                        604800          ; Refresh
+                        86400           ; Retry
+                        2419200         ; Expire
+                        604800 )        ; Negative Cache TTL
+
+; Serveur de noms
+@       IN      NS      ns1.smarttech.sn.
+
+; Enregistrement PTR
+15      IN      PTR     mail.smarttech.sn.
+8      IN      PTR     client-ubuntu.
+35      IN      PTR     client-windows.

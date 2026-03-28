@@ -1,0 +1,10 @@
+[DEFAULT]
+bantime = 3600       # Bannir 1 heure
+findtime = 600       # Fenêtre de 10 minutes
+maxretry = 5         # 5 tentatives max
+
+[sshd]
+enabled = true
+port = 22
+logpath = /var/log/auth.log
+maxretry = 3         # Seulement 3 pour SSH

@@ -1,0 +1,30 @@
+options {
+    directory "/var/cache/bind";
+
+    // --- ACCÈS ET ÉCOUTE ---
+    // On force l'écoute sur toutes les interfaces IPv4 uniquement
+    listen-on { any; };
+    listen-on-v6 { none; }; 
+
+    // --- SÉCURITÉ (ACL) ---
+    // On autorise explicitement ton réseau local
+    allow-query { any; };
+    allow-recursion { any; };
+    allow-query-cache { any; };
+
+    // --- TRANSFERT (FORWARDING) ---
+    // Si le serveur ne connaît pas une adresse, il demande à Google
+    forwarders {
+        8.8.8.8;
+        8.8.4.4;
+    };
+
+    // --- PARAMÈTRES RÉSEAU ---
+    // Désactivation de DNSSEC pour éviter les problèmes de signature en local
+    dnssec-validation no;
+    
+    // Empêche la divulgation de la version de BIND (sécurité)
+    version "Non disponible";
+
+    auth-nxdomain no;    # conforme à la RFC1035
+};

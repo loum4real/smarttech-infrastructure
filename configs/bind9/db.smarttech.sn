@@ -1,0 +1,34 @@
+;
+; Fichier de zone pour smarttech.sn
+;
+$TTL    604800
+@       IN      SOA     ns1.smarttech.sn. admin.smarttech.sn. (
+                        2026021701      ; Serial (format : YYYYMMDDNN)
+                        604800          ; Refresh
+                        86400           ; Retry
+                        2419200         ; Expire
+                        604800 )        ; Negative Cache TTL
+
+; Serveurs de noms
+@       IN      NS      ns1.smarttech.sn.
+
+; Enregistrement A pour le serveur de noms
+ns1     IN      A       192.168.1.15
+
+; Enregistrement MX pour le mail
+@       IN      MX      10 mail.smarttech.sn.
+
+; Services principaux
+mail    IN      A       192.168.1.15
+www     IN      A       192.168.1.15
+
+; Services d'accès
+ssh.mail        IN      A       192.168.1.15
+vnc.mail        IN      A       192.168.1.15
+novnc.mail      IN      A       192.168.1.15
+
+; Application web
+intranet.mail   IN      A       192.168.1.15
+
+; Alias
+webmail IN      CNAME   mail

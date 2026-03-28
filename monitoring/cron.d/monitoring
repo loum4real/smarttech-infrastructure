@@ -1,0 +1,11 @@
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+* * * * * root /opt/monitoring/ssh.sh
+* * * * * root /opt/monitoring/sudo.sh
+* * * * * root /opt/monitoring/services.sh
+* * * * * root /opt/monitoring/webauth.sh
+* * * * * root /opt/monitoring/crud.sh
+* * * * * root /opt/monitoring/samba.sh
+# Ligne vide obligatoire ci-dessous
+

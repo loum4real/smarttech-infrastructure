@@ -1,0 +1,5 @@
+config.php
+*.key
+*.pem
+*.log
+*.tmp
