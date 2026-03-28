@@ -19,12 +19,12 @@ Services déployés
 | Pare-feu | UFW + Fail2ban | — |
 
 Structure
-\`\`\`
+
 configs/     → fichiers de configuration des services
 monitoring/  → scripts Bash de surveillance automatisée
 webapp/      → application web PHP CRUD
 rapport/     → rapport technique PDF
-\`\`\`
+
 
 Sécurité
 - HTTPS activé (certificats SSL auto-signés)
