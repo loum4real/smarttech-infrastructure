@@ -1,7 +1,7 @@
 Projet SMARTTECH — Infrastructure Réseau Complète
 
 Réalisé par : Aliou Loum  
-Formation : Licence 3 GLSI — École Supérieure Polytechnique de Dakar  
+Formation : Licence 3 GLSI  École Supérieure Polytechnique de Dakar  
 Date : Février 2026
 
 Description
